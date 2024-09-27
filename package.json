@@ -1,44 +1,39 @@
 {
-    "name": "Selvania-Launcher",
-    "preductname": "Selvania Launcher",
-    "version": "2.0.7",
-    "description": "Launcher Mincraft pour le serveur Selvania",
+    "name": "Xenodex-Launcher",
+    "preductname": "Xenodex Launcher",
+    "version": "0.0.1",
+    "description": "Xenodex Pixelmon 1.20.2",
     "main": "src/app.js",
-    "author": {
-        "name": "luuxis, Inc.",
-        "email": "contact@luuxis.fr",
-        "url": "https://github.com/luuxis"
+    "author": "luuxis,JuiMui",
+    "url": "http://juimui.trueddns.com:23170/launcher_backend",
+    "engines": {
+        "node": "^18.x.x"
     },
-    "url": "http://launcher.luuxis.fr",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
-        "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
-        "build": "node build.js --obf=true --build=platform",
-        "icon": "node build.js --icon=https://raw.githubusercontent.com/luuxis/Selvania-Launcher/master/src/assets/images/icon.png"
+        "build": "node build.js --build",
+        "icon": "node build.js --icon=https://raw.githubusercontent.com/JuiMui/Xenodex-Launcher/master/src/assets/images/icon.png",
+        "dev": "nodemon --exec npm start"
     },
-    "license": "CCANC",
+    "license": "CC0",
     "nodemonConfig": {
-        "ext": "js,html,css",
-        "ignore": "**/test"
+        "ext": "js,html,css"
     },
     "dependencies": {
-        "electron-updater": "^6.1.8",
-        "minecraft-java-core": "^3.10.4",
-        "node-bdd": "^2.0.4",
-        "node-fetch": "^2.7.0",
-        "xml-js": "^1.6.11"
+        "electron-updater": "^6.1.4",
+        "minecraft-java-core": "3.8.1",
+        "node-fetch": "^2.7.0"
     },
     "devDependencies": {
         "cross-env": "^7.0.3",
-        "electron": "^30.0.9",
-        "electron-builder": "^24.13.3",
-        "javascript-obfuscator": "^4.1.0",
-        "jimp": "^0.22.12",
-        "nodemon": "^3.1.2",
+        "electron": "^27.0.4",
+        "electron-builder": "^24.6.3",
+        "jimp": "^0.22.10",
+        "nodemon": "^3.0.1",
         "png2icons": "^2.0.1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/luuxis/Selvania-Launcher.git"
+        "url": "git+https://github.com/JuiMui/Xenodex-Launcher.git"
     }
 }
